@@ -11,17 +11,19 @@
 |  [1110](https://www.acmicpc.net/problem/1110)  | 브론즈1 |                                                      |        |        |   ✅   |        |        |        |
 |  [2960](https://www.acmicpc.net/problem/2960)  |  실버4  |                                                      |        |        |   ✅   |        |        |        |
 | [10972](https://www.acmicpc.net/problem/10972) |  실버3  |                                                      |        |        |        |        |        |        |
-|  [1747](https://www.acmicpc.net/problem/1747)  |  실버1  |  <a href="https://github.com/taeho0888">윤태호</a>   |        |        |        |        |        |        |
+|  [1747](https://www.acmicpc.net/problem/1747)  |  실버1  |  <a href="https://github.com/taeho0888">윤태호</a>   |        |        |   ✅   |        |        |        |
 | [41644](https://www.acmicpc.net/problem/41744) |  골드3  | <a href="https://github.com/hyundongSung">성현동</a> |        |        |        |        |        |        |
 
-<!-- 표 입력할 때 아래 거 참고!
+<!--
+표 입력할 때 아래 거 참고!
 [문제번호](https://www.acmicpc.net/problem/문제번호)
 <a href="https://github.com/taeho0888">윤태호</a>
 <a href="https://github.com/sunghyun1356">김성현</a>
 <a href="https://github.com/hyundongSung">성현동</a>
 <a href="https://github.com/wchan0409">이우찬</a>
 <a href="https://github.com/SehwanChang">장세환</a>
-<a href="https://github.com/Gunhot">이건화</a> -->
+<a href="https://github.com/Gunhot">이건화</a>
+-->
 
 ## 규칙
 
