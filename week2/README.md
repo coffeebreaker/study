@@ -5,13 +5,13 @@
 
 ## 풀어올 문제
 
-|                      문제                      | 난이도  |                        담당자                        |
-| :--------------------------------------------: | :-----: | :--------------------------------------------------: |
-|  [2745](https://www.acmicpc.net/problem/2745)  | 브론즈2 |                                                      |
-|  [1110](https://www.acmicpc.net/problem/1110)  | 브론즈1 |                                                      |
-|  [2960](https://www.acmicpc.net/problem/2960)  |  실버3  |                                                      |
-|  [1747](https://www.acmicpc.net/problem/1747)  |  실버1  |  <a href="https://github.com/taeho0888">윤태호</a>   |
-| [41644](https://www.acmicpc.net/problem/41744) |  골드3  | <a href="https://github.com/hyundongSung">성현동</a> |
+|                    문제번호                    | 난이도  |                        담당자                        | 김성현 | 성현동 | 윤태호 | 이건화 | 이우찬 | 장세환 |
+| :--------------------------------------------: | :-----: | :--------------------------------------------------: | :----: | :----: | :----: | :----: | :----: | :----: |
+|  [2745](https://www.acmicpc.net/problem/2745)  | 브론즈2 |                                                      |        |        |        |        |        |        |
+|  [1110](https://www.acmicpc.net/problem/1110)  | 브론즈1 |                                                      |        |        |        |        |        |        |
+|  [2960](https://www.acmicpc.net/problem/2960)  |  실버3  |                                                      |        |        |        |        |        |        |
+|  [1747](https://www.acmicpc.net/problem/1747)  |  실버1  |  <a href="https://github.com/taeho0888">윤태호</a>   |        |        |        |        |        |        |
+| [41644](https://www.acmicpc.net/problem/41744) |  골드3  | <a href="https://github.com/hyundongSung">성현동</a> |        |        |        |        |        |        |
 
 ## 규칙
 
@@ -19,3 +19,4 @@
   - 문제 번호에 해당 문제의 백준 링크를 작성해주세요!
 - 담당자는 발표할 문제 정한 뒤 `README.md` 수정 후 푸시하기
 - 인원 별 폴더를 생성한 뒤 푼 문제의 소스코드 푸시하기
+- 문제 푼 뒤 윗 표의 해당 칸에 ✅ 입력하기
