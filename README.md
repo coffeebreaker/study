@@ -1,10 +1,28 @@
 # 멋쟁이사자처럼 코딩테스트 스터디
 
-| ![윤태호](https://github.com/taeho0888.png) | ![장세환](https://github.com/SehwanChang.png)  |    ![이건화](https://github.com/Gunhot.png)    |
-| :-----------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-|   [윤태호](https://github.com/taeho0888)    |    [장세환](https://github.com/SehwanChang)    |      [이건화](https://github.com/Gunhot)       |
-| ![이우찬](https://github.com/wchan0409.png) | ![김성현](https://github.com/sunghyun1356.png) | ![성현동](https://github.com/hyundongSung.png) |
-|   [이우찬](https://github.com/wchan0409)    |   [김성현](https://github.com/sunghyun1356)    |   [성현동](https://github.com/hyundongSung)    |
+<div align="center"><table width="50%">
+  <tr>
+    <td align="center"><img src="https://github.com/taeho0888.png" width="100"/></td>
+    <td align="center"><img src="https://github.com/sunghyun1356.png" width="100"/></td>
+    <td align="center"><img src="https://github.com/hyundongSung.png" width="100"/></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/taeho0888">윤태호</a></td>
+    <td align="center"><a href="https://github.com/sunghyun1356">김성현</a></td>
+    <td align="center"><a href="https://github.com/hyundongSung">성현동</a></td>
+  </tr>
+  <tr>
+    <td align="center"><img src="https://github.com/wchan0409.png" width="100"/></td>
+    <td align="center"><img src="https://github.com/SehwanChang.png" width="100"/></td>
+    <td align="center"><img src="https://github.com/Gunhot.png" width="100"/></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/wchan0409">이우찬</a></td>
+    <td align="center"><a href="https://github.com/SehwanChang">장세환</a></td>
+    <td align="center"><a href="https://github.com/Gunhot">이건화</a></td>
+  </tr>
+</table>
+</div>
 
 ## 📅 정기 모임 날짜
 
