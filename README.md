@@ -1,5 +1,11 @@
 # 멋쟁이사자처럼 코딩테스트 스터디
 
+| ![윤태호](https://github.com/taeho0888.png) | ![장세환](https://github.com/SehwanChang.png)  |    ![이건화](https://github.com/Gunhot.png)    |
+| :-----------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+|   [윤태호](https://github.com/taeho0888)    |    [장세환](https://github.com/SehwanChang)    |      [이건화](https://github.com/Gunhot)       |
+| ![이우찬](https://github.com/wchan0409.png) | ![김성현](https://github.com/sunghyun1356.png) | ![성현동](https://github.com/hyundongSung.png) |
+|   [이우찬](https://github.com/wchan0409)    |   [김성현](https://github.com/sunghyun1356)    |   [성현동](https://github.com/hyundongSung)    |
+
 ### 📅 정기 모임 날짜
 
 - 시간 : 매주 수요일 오후 7시
