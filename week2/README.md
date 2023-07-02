@@ -10,7 +10,7 @@
 |  [2745](https://www.acmicpc.net/problem/2745)  | 브론즈2 |    <a href="https://github.com/Gunhot">이건화</a>    |   ✅   |        |   ✅   |   ✅   |        |        |
 |  [1110](https://www.acmicpc.net/problem/1110)  | 브론즈1 |                                                      |   ✅   |        |   ✅   |   ✅   |        |        |
 |  [2960](https://www.acmicpc.net/problem/2960)  |  실버4  | <a href="https://github.com/sunghyun1356">김성현</a> |   ✅   |        |   ✅   |        |        |        |
-| [10972](https://www.acmicpc.net/problem/10972) |  실버3  |                                                      |   ✅   |        |   ✅   |        |        |        |
+| [10972](https://www.acmicpc.net/problem/10972) |  실버3  | <a href="https://github.com/SehwanChang">장세환</a>  |   ✅   |        |   ✅   |        |        |        |
 |  [1747](https://www.acmicpc.net/problem/1747)  |  실버1  |  <a href="https://github.com/taeho0888">윤태호</a>   |   ✅   |        |   ✅   |        |        |        |
 |  [1644](https://www.acmicpc.net/problem/1644)  |  골드3  | <a href="https://github.com/hyundongSung">성현동</a> |   ✅   |        |   ✅   |        |        |        |
 
