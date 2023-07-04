@@ -1,3 +1,4 @@
+#10972
 def is_palindrome(word):
     left, right = 0, len(word) - 1
     warn = 0

@@ -1,3 +1,4 @@
+#2960
 n = int(input())
 cur_perm = [int(num) for num in input().split()]
 

@@ -1,3 +1,4 @@
+#1110
 init = int(input())
 result = init
 cnt = 0
