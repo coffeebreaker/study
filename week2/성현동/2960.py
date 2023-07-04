@@ -1,17 +1,17 @@
 #2960
-n = int(input())
-cur_perm = [int(num) for num in input().split()]
+n, k = map(int, input().split())
+visited = [False for num in range(n + 1)]
 
-i = n - 2
-while i >= 0 and cur_perm[i] >= cur_perm[i + 1]:
-    i -= 1
-
-if i == -1:
-    print(-1)
-else:
-    j = n - 1
-    while cur_perm[j] <= cur_perm[i]:
-        j -= 1
-    cur_perm[i], cur_perm[j] = cur_perm[j], cur_perm[i]
-    cur_perm = cur_perm[:i+1] + cur_perm[n-1:i:-1]
-    print(' '.join(str(e) for e in cur_perm))
+step = 2
+cnt = 0
+for i in range(2, n + 1):
+    if visited[i]:
+        continue
+    for j in range(i, n + 1, i):
+        if visited[j]:
+            continue
+        visited[j] = True
+        cnt += 1
+        if cnt == k:
+            print(j)
+            exit(0)
