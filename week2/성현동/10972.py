@@ -1,29 +1,17 @@
 #10972
-def is_palindrome(word):
-    left, right = 0, len(word) - 1
-    warn = 0
-    while left < right:
-        if word[left] == word[right]:
-            left += 1
-            right -= 1
-        elif word[left + 1] == word[right]:
-            warn += 1
-            left += 1
-        elif word[left] == word[right - 1]:
-            warn += 1
-            right -= 1
-        else:
-            return 2
-        if warn > 1:
-            return 2
+n = int(input())
+cur_perm = [int(num) for num in input().split()]
 
-    if warn == 1:
-        return 1
-    else:
-        return 0
+i = n - 2
+while i >= 0 and cur_perm[i] >= cur_perm[i + 1]:
+    i -= 1
 
-
-rep = int(input())
-for _ in range(rep):
-    result = is_palindrome(input())
-    print(result)
+if i == -1:
+    print(-1)
+else:
+    j = n - 1
+    while cur_perm[j] <= cur_perm[i]:
+        j -= 1
+    cur_perm[i], cur_perm[j] = cur_perm[j], cur_perm[i]
+    cur_perm = cur_perm[:i+1] + cur_perm[n-1:i:-1]
+    print(' '.join(str(e) for e in cur_perm))
