@@ -14,5 +14,4 @@ else:
         new_n = "".join(new_l)
         n = new_n
         count += 1
-
     print(count)
