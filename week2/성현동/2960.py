@@ -2,16 +2,15 @@
 n, k = map(int, input().split())
 visited = [False for num in range(n + 1)]
 
-step = 2
 cnt = 0
-for i in range(2, n + 1):
-    if visited[i]:
+for head in range(2, n + 1):
+    if visited[head]:
         continue
-    for j in range(i, n + 1, i):
-        if visited[j]:
+    for cur in range(head, n + 1, head):
+        if visited[cur]:
             continue
-        visited[j] = True
+        visited[cur] = True
         cnt += 1
         if cnt == k:
-            print(j)
+            print(cur)
             exit(0)
