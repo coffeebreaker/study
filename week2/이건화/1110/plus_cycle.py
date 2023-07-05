@@ -4,7 +4,6 @@ if (ori_n == "0") :
 else: 
     if int(ori_n) < 10:
         ori_n = '0' + ori_n
-
     count = 0
     n = ori_n
     new_n = "00"
