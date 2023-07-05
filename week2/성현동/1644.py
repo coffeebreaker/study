@@ -1,4 +1,4 @@
-#1644
+# 1644
 target = int(input())
 
 prime_list = []
@@ -13,8 +13,8 @@ prime_sum = [0] * (len(prime_list) + 1)
 for idx, prime in enumerate(prime_list):
     prime_sum[idx + 1] = prime_sum[idx] + prime
 
-left, right = 0, 1
-end, count = len(prime_sum), 0
+left, right, end = 0, 1, len(prime_sum)
+cnt = 0
 while right < end:
     cur_sum = prime_sum[right] - prime_sum[left]
     if cur_sum < target:
@@ -22,7 +22,7 @@ while right < end:
     elif cur_sum > target:
         left += 1
     else:
-        count += 1
+        cnt += 1
         right += 1
 
-print(count)
+print(cnt)
