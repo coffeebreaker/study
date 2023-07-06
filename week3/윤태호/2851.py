@@ -29,3 +29,19 @@ for i in range(10):
 
 if sum_list[10] < 100:
     print(sum_list[10])
+
+# 지선생 코드
+# mushrooms = [int(input()) for _ in range(10)]
+
+# # 누적합
+# sum_list = [0] * 11
+# for i in range(10):
+#     sum_list[i+1] = sum_list[i] + mushrooms[i]
+#     if sum_list[i+1] >= 100:
+#         if 100 - sum_list[i] > sum_list[i+1] - 100:
+#             print(sum_list[i+1])
+#         else:
+#             print(sum_list[i])
+#         break
+# else:
+#     print(sum_list[10])
