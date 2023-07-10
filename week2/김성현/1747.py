@@ -11,6 +11,8 @@ def prime(n):
             return False
     return True
 
+
+
 def pel(a):
     if a == a[::-1]:
         return True

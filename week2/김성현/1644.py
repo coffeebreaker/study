@@ -30,4 +30,5 @@ def two_pointer(prime):
     print(cnt)
 find_primes(n)
 two_pointer(primes)
+
         
