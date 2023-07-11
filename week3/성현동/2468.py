@@ -34,7 +34,8 @@ for i in range(size):
     height[i] = [int(h) for h in input().strip().split()]
 
 connected_cnt = []
-for rain in range(0, max(list(itertools.chain(*height)))):
+max_rain = max(list(itertools.chain(*height)))
+for rain in range(0, max_rain+1):
     sink_result = calc_sink(height, rain)
     visited = [[False] * size for _ in range(size)]
 
