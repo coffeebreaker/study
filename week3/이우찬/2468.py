@@ -36,7 +36,6 @@
 
 
 import copy
-import sys
 
 def counting(copied):
     count = 0
@@ -62,8 +61,6 @@ def counting(copied):
     
     return count
 
-
-sys.setrecursionlimit(100000)
 #input
 N = int(input())
 
