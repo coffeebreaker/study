@@ -111,12 +111,15 @@ def kruskal(edges):
     return total_length  # 그 외에는 성공적으로 섬들이 연결된 것이므로, 그 다리길이 누적 값 리턴
 
 
-# 메인 로직
+# 메인 로직!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 row_num, col_num = map(int, input().split())
+
+# 지도정보 저장
 map_info = [[0] * col_num for _ in range(row_num)]
 for i in range(row_num):
     map_info[i] = [int(i) for i in input().split()]
 
+# dfs활용해 섬에 id부여
 visited = [[False] * col_num for _ in range(row_num)]
 island_id = 0
 for i in range(row_num):
@@ -125,7 +128,12 @@ for i in range(row_num):
             island_id += 1
             name_islands(i, j)
 
+# 해안가 셀 좌표들 구함
 border_list = search_borders()
+
+# 해안가 셀들로부터 다리 건설 후 bridges에 저장
 bridges = set()
 build_bridges()
+
+# 크루스칼 알고리즘으로 MST 구해서 모든 섬 연결하는 최소 다리길이 출력
 print(kruskal(bridges))
