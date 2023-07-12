@@ -1,7 +1,7 @@
 from collections import deque
 
 n, m = map(int, input().split())
-print(n, m)
+# print(n, m)
 land = []
 visited = []
 for i in range(0, n):
@@ -193,24 +193,24 @@ for i in range(n):
             find_west(i, j, land[i][j])
             find_east(i, j, land[i][j])
             find_south(i, j, land[i][j])
-for i in range(0, mark) :
-        print(edge[i])
+# for i in range(0, mark) :
+        # print(edge[i])
 
 # key, p(parent), mst 준비
 INF = float('inf')
-key = [INF] * (mark - 1) # key는 무한대로 초기화
-p = [-1] * (mark - 1)   # p(parent)는 -1로 초기화
-mst = [False] * (mark - 1)
+key = [INF] * (mark) # key는 무한대로 초기화
+p = [-1] * (mark)   # p(parent)는 -1로 초기화
+mst = [False] * (mark)
 
 # 시작점 선택 : 0번 선택
-key[0] = 0
+key[1] = 0
 cnt = 1
 result = 0
-while cnt < (mark - 1):
+while cnt < (mark):
     # 아직 mst가 아니고, key가 최소인 정점 선택 : u
     MIN = INF
-    u = -1
-    for i in range(1, (mark - 1)):
+    u = 0
+    for i in range(1, (mark)):
         if not mst[i] and key[i] <MIN:
             MIN = key[i]
             u = i
@@ -220,11 +220,14 @@ while cnt < (mark - 1):
     cnt+=1
     # key 값을 갱신
     # u에 인접하고, 아직 mst가 아닌 정점 w에서 key[w] > u - w 가중치  이면 갱신!
-    for w in range(1, (mark - 1)):
+    for w in range(1, (mark)):
         if edge[u][w] > 0 and not mst[w] and key[w] > edge[u][w]:
             key[w] = edge[u][w]
             p[w] = u
 
-print(key) # [0, 21, 31, 34, 46, 18, 25]
-print(p) # [-1, 2, 0, 4, 2, 3, 2]
-print(result) # 175
+# print(key) # [0, 21, 31, 34, 46, 18, 25]
+# print(p) # [-1, 2, 0, 4, 2, 3, 2]
+if result == INF :
+    print("-1")
+else :
+    print(result) # 175
