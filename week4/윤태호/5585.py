@@ -9,6 +9,7 @@
 # 출력
 # 제출할 출력 파일은 1행으로만 되어 있다. 잔돈에 포함된 매수를 출력하시오.
 
+# 내 풀이
 def greedy(money, count):
     if money >= 500:
         return greedy(money-500, count + 1)
@@ -25,3 +26,16 @@ def greedy(money, count):
 
 
 print(greedy(1000-int(input()), 0))
+
+# 민석이꺼
+
+# exchange = 1000 - int(input())
+# money = [500, 100, 50, 10, 5, 1]
+# count = 0
+
+# for i in range(6):
+#     if exchange >= money[i]:
+#         count += exchange//money[i]
+#         exchange %= money[i]
+
+# print(count)
