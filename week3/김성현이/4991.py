@@ -67,6 +67,7 @@ while True:
 """
 
 from collections import deque
+from itertools import permutations
 
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
@@ -115,10 +116,24 @@ while True:
             initialize(check)
             bfs(dust[i][0], dust[i][1], check)
             for j in range(total):
-                valid[i][j] = check[dust[j][0]][dust[j][1]]
+                if i!=j:
+                    valid[i][j] = check[dust[j][0]][dust[j][1]]
 
-        dp = [[0] * total for _ in range(total)]
-        for i in range(1, total):
-            for j in range(total):
-                dp[i][j] = valid[i][j] + min(dp[i - 1][k] for k in range(total) if k != j)
-        print(min(dp[total - 1]))
+# permutation을 통해서 0 123등으로
+
+        candidate =[]
+        permutation = list(permutations(range(1,total+1)))
+        
+        i=0
+        current=0
+        for per in permutation:
+            total = 0
+            for p in per:
+                total +=valid[current][p]
+                current = p
+            candidate.append(total)
+    print(min(candidate))
+            
+            
+
+            
