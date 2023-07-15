@@ -1,3 +1,4 @@
+
 """
 from collections import deque
 from itertools import permutations
@@ -137,3 +138,4 @@ while True:
             
 
             
+
