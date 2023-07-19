@@ -7,12 +7,12 @@
 
 |                    문제번호                    | 난이도  |                        담당자                        | 김성현 | 성현동 | 윤태호 | 이건화 | 이우찬 | 장세환 |
 | :--------------------------------------------: | :-----: | :--------------------------------------------------: | :----: | :----: | :----: | :----: | :----: | :----: |
-| [10162](https://www.acmicpc.net/problem/10162) | 브론즈3 | <a href="https://github.com/sunghyun1356">김성현</a> |   ✅   |    ✅    |   ✅   |   ✅   |        |   ✅   |
-|  [5585](https://www.acmicpc.net/problem/5585)  | 브론즈2 |                                                      |   ✅   |    ✅    |   ✅   |   ✅   |        |   ✅   |
-|  [2217](https://www.acmicpc.net/problem/2217)  |  실버4  |  <a href="https://github.com/wchan0409">이우찬</a>   |   ✅   |   ✅     |   ✅   |   ✅   |        |   ✅   |
-|  [1931](https://www.acmicpc.net/problem/1931)  |  실버1  | <a href="https://github.com/SehwanChang">장세환</a>  |   ✅   |        |   ✅   |   ✅   |        |   ✅   |
-|  [1946](https://www.acmicpc.net/problem/1946)  |  실버1  |                                                      |   ✅   |        |   ✅   |        |        |   ✅   |
-|  [1092](https://www.acmicpc.net/problem/1092)  |  골드5  |  <a href="https://github.com/taeho0888">윤태호</a>   |   ✅   |        |   ✅   |        |        |   ✅   |
+| [10162](https://www.acmicpc.net/problem/10162) | 브론즈3 | <a href="https://github.com/sunghyun1356">김성현</a> |   ✅   |    ✅    |   ✅   |   ✅   |   ✅   |   ✅   |
+|  [5585](https://www.acmicpc.net/problem/5585)  | 브론즈2 |                                                      |   ✅   |    ✅    |   ✅   |   ✅   |   ✅   |   ✅   |
+|  [2217](https://www.acmicpc.net/problem/2217)  |  실버4  |  <a href="https://github.com/wchan0409">이우찬</a>   |   ✅   |   ✅     |   ✅   |   ✅   |   ✅   |   ✅   |
+|  [1931](https://www.acmicpc.net/problem/1931)  |  실버1  | <a href="https://github.com/SehwanChang">장세환</a>  |   ✅   |        |   ✅   |   ✅   |   ⏱️   |   ✅   |
+|  [1946](https://www.acmicpc.net/problem/1946)  |  실버1  |                                                      |   ✅   |        |   ✅   |        |   ⏱️   |   ✅   |
+|  [1092](https://www.acmicpc.net/problem/1092)  |  골드5  |  <a href="https://github.com/taeho0888">윤태호</a>   |   ✅   |        |   ✅   |        |   🚫   |   ✅   |
 
 <!-- 표 입력할 때 아래 거 참고!
 [문제번호](https://www.acmicpc.net/problem/문제번호)
