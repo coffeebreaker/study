@@ -7,12 +7,12 @@
 
 | 문제번호 | 난이도 | 담당자 | 김성현 | 성현동 | 윤태호 | 이건화 | 이우찬 | 장세환 |
 | :------: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-|          |        |        |        |        |        |        |        |        |
-|          |        |        |        |        |        |        |        |        |
-|          |        |        |        |        |        |        |        |        |
-|          |        |        |        |        |        |        |        |        |
-|          |        |        |        |        |        |        |        |        |
-|          |        |        |        |        |        |        |        |        |
+|  https://www.acmicpc.net/problem/2775|  브론즈 1      |        |        |        |        |        |        |        |
+|   https://www.acmicpc.net/problem/1463  |  실버 3      |        |        |        |        |        |        |        |
+|   https://www.acmicpc.net/problem/2579  |    실버 3    |        |        |        |        |        |        |        |
+| https://www.acmicpc.net/problem/11053  |   실버 2     |        |        |        |        |        |        |        |
+| https://www.acmicpc.net/problem/9251  |   골드 5    |        |        |        |        |        |        |        |
+|  https://www.acmicpc.net/problem/9663  |   골드4     |        |        |        |        |        |        |        |
 
 <!-- 표 입력할 때 아래 거 참고!
 [문제번호](https://www.acmicpc.net/problem/문제번호)
