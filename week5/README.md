@@ -5,14 +5,14 @@
 
 ## 풀어올 문제
 
-| 문제번호 | 난이도 | 담당자 | 김성현 | 성현동 | 윤태호 | 이건화 | 이우찬 | 장세환 |
-| :------: | :----: | :----: | :----: | :----: | :----: | :----: | :----: | :----: |
-|  [2775](https://www.acmicpc.net/problem/2775)|  브론즈 1      |        |        |        |        |        |        |        |
-|  [1463](https://www.acmicpc.net/problem/1463)  |  실버 3      |        |        |        |        |        |        |        |
-|  [2579](https://www.acmicpc.net/problem/2579)  |    실버 3    |        |        |        |        |        |        |        |
-| [11053](https://www.acmicpc.net/problem/11053) |   실버 2     |        |        |        |        |        |        |        |
-| [9251](https://www.acmicpc.net/problem/9251)  |   골드 5    |        |        |        |        |        |        |        |
-|  [9663](https://www.acmicpc.net/problem/9663) |   골드4     |     <a href="https://github.com/taeho0888">윤태호</a>   |        |        |        |        |        |        |
+|                    문제번호                    | 난이도  |                      담당자                       | 김성현 | 성현동 | 윤태호 | 이건화 | 이우찬 | 장세환 |
+| :--------------------------------------------: | :-----: | :-----------------------------------------------: | :----: | :----: | :----: | :----: | :----: | :----: |
+|  [2775](https://www.acmicpc.net/problem/2775)  | 브론즈1 |                                                   |        |        |        |        |        |        |
+|  [1463](https://www.acmicpc.net/problem/1463)  |  실버3  |                                                   |        |        |        |        |        |        |
+|  [2579](https://www.acmicpc.net/problem/2579)  |  실버3  |                                                   |        |        |        |        |        |        |
+| [11053](https://www.acmicpc.net/problem/11053) |  실버2  |                                                   |        |        |        |        |        |        |
+|  [9251](https://www.acmicpc.net/problem/9251)  |  골드5  |                                                   |        |        |        |        |        |        |
+|  [9663](https://www.acmicpc.net/problem/9663)  |  골드4  | <a href="https://github.com/taeho0888">윤태호</a> |        |        |        |        |        |        |
 
 <!-- 표 입력할 때 아래 거 참고!
 [문제번호](https://www.acmicpc.net/problem/문제번호)
