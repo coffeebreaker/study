@@ -65,6 +65,10 @@ def bfs(a, b):
                         q.append((ny, nx))
                         ans += 1
                         right = 0
+                else:
+                    return
+            else:
+                return
     return ans
 
 
@@ -88,7 +92,10 @@ for i in range(maximum):
     refresh()
     ans = 0
     making(i)
-    candidate.append(bfs(0, 0))
+    for i in range(n):
+        for j in range(n):
+            candidate.append(bfs(i, j))
+    
 print(candidate)
 print(max(candidate))
 """
