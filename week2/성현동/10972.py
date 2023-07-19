@@ -1,17 +1,21 @@
-#10972
 n = int(input())
-cur_perm = [int(num) for num in input().split()]
+string = input()
+cur_perm = [int(num) for num in string.split()]
 
-i = n - 2
-while i >= 0 and cur_perm[i] >= cur_perm[i + 1]:
-    i -= 1
-
-if i == -1:
+if string == string[::-1]:
     print(-1)
 else:
-    j = n - 1
-    while cur_perm[j] <= cur_perm[i]:
-        j -= 1
-    cur_perm[i], cur_perm[j] = cur_perm[j], cur_perm[i]
-    cur_perm = cur_perm[:i+1] + cur_perm[n-1:i:-1]
-    print(' '.join(str(e) for e in cur_perm))
+    small = -1
+    for i in range(n - 1):
+        if cur_perm[i] < cur_perm[i + 1]:
+            small = i
+    if small == -1:
+        print(-1)
+    else:
+        big = -1
+        for i in range(n - 1):
+            if cur_perm[small] < cur_perm[i]:
+                big = i
+        cur_perm[small], cur_perm[big] = cur_perm[big], cur_perm[small]
+        cur_perm = cur_perm[:small + 1] + sorted(cur_perm[small + 1:])
+        print(' '.join(map(str, cur_perm)))
