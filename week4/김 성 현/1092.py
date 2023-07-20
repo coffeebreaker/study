@@ -1,4 +1,5 @@
 import sys
+import copy
 c = int(sys.stdin.readline())
 if c<=0 or c>50:
     print(-1)
@@ -8,13 +9,15 @@ crain = list(map(int, sys.stdin.readline().split()))
 crain.sort(reverse=True)  
 
 b = int(sys.stdin.readline())
-if b<=0 or b>10000:
+if b<=0 or b>1000000:
     print(-1)
     sys.exit()
-boxes = list(map(int, sys.stdin.readline().split()))  
+boxes = list(map(int, sys.stdin.readline().split()))
+
 boxes.sort(reverse=True)  
+
 boxes_min = min(boxes)
-crain_copy = crain.copy() 
+crain_copy = copy.deepcopy(crain) 
 
 for i in crain_copy:
     if i < boxes_min:
@@ -31,9 +34,13 @@ else:
         if not boxes:
             break
         for a in crain:
+            if not boxes:
+                break
             for b in boxes:
                 if a >= b:
                     boxes.remove(b)
+                    if not boxes:
+                        break
                     break
         time+=1
 
