@@ -26,11 +26,26 @@ crane_n = int(input())
 crane = list(map(int, input().split()))
 box_n = int(input())
 box = list(map(int, input().split()))
-minute = 0
-using = [False] * crane_n
+
+if max(crane) < max(box):
+    print(-1)
+    sys.exit()
+crane.sort(reverse=True)
+box.sort(reverse=True)
+
+carrying = [0] * crane_n
 carried = [False] * box_n
-for i in range(0, box_n) :
-    for j in range(0, crane_n) :
-        if using[j] == False :
-            using[j] = True
-            carried[i] = True
+count = 0
+result = 0
+while True :
+    if count == box_n :
+        break
+    for i in range(0, crane_n) :
+        for j in range(carrying[i], box_n) :
+            if carried[j] == False and crane[i] >= box[j]:
+                carried[j] = True
+                carrying[i] = j
+                count += 1
+                break
+    result += 1
+print(result)
