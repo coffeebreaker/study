@@ -10,23 +10,25 @@ n = int(input())
 def n_queens(n):
     a = list(range(n))
     candidate = permutations(a, n)
-    perfect_candidate =[]
-    for (perm) in candidate:
-        check=[ [True] * n for _ in range(n)]
+    perfect_candidate = []
+    for perm in candidate:
+        check = [[True] * n for _ in range(n)]
         for i in range(n):
-            for j in range(i,n):
-                if (perm[i]+j-i)<=n-1:
-                    check[j][perm[i]+j-i] = False
-                if (perm[i]-j+i) >=0:
-                    check[j][perm[i]-j+i] = False
+            for j in range(i+1, n):
+                if (perm[i] + j - i) <= n-1:
+                    check[j][perm[i] + j - i] = False
+                if (perm[i] - j + i) >= 0:
+                    check[j][perm[i] - j + i] = False
         for i in range(n):
-            if check[i][perm[i]]==False:
+            if check[i][perm[i]] is False:
                 break
-            perfect_candidate.append(perm) 
+        else:
+            perfect_candidate.append(perm)
     print(len(perfect_candidate))
+
 n_queens(n)
 
-# 이거 왜 틀림 ㅅㅂ
+
 
         
 
