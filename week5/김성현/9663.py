@@ -4,6 +4,11 @@
 #2차원을 pca로 진행 -> 차원 축소
 
 #2차원 짜리를 1차원으로 index와 값으로 생각해보자
+
+# i는 몇번째인지와 
+# j는 그 뒤에 비교해줄 것인데
+# i와 j의 차이 만큼 perm[i]에 더해주고 빼주는 값의 인덱스는 대각선이라서 안된다 -> check로 확인
+# 가로 세로는 permutation으로 방지 가능
 from itertools import permutations
 n = int(input())
 
