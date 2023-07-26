@@ -15,7 +15,8 @@
 #그리고 다음 숫자를 대상으로 만약 후자가 그전 숫자보다 크다면, count 시작
 
 #Runtime
-
+import sys
+input = sys.stdin.readline
 #input
 T = int(input())
 res = []
@@ -42,10 +43,3 @@ for i in range(T):
     res.append(count_list[0])
 for i in range(T):
     print(res[i])
-
-
-
-
-
-
-
