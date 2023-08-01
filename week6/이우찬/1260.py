@@ -16,7 +16,7 @@
 # 1 2 3 4 5
 # 2 1 1 3 2
 # 3 5 4 5 4
-from collections import deque
+
 #dfs
 # V에서 시작
 def dfs(V):
@@ -27,15 +27,18 @@ def dfs(V):
             dfs(dots[V][i])
 
 def bfs(V):
-    q = deque([V])
+    q = []
+    q.append(V)
+    bfs_res.append(V)
     visited[V] = True
+
     while q :
-        V = q.popleft()
-        bfs_res.append(V)
-        for i in dots[V] :
-            if not visited[i] :
-                q.append(i)
-                visited[i] = True
+        V = q.pop(0)
+        for i in range(len(dots[V])):
+            if visited[dots[V][i]]==False :
+                q.append(dots[V][i])
+                bfs_res.append(dots[V][i])
+                visited[dots[V][i]] = True
 
 #input
 N, M, V = map(int, input().split())
