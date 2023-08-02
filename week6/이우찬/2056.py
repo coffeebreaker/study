@@ -48,12 +48,7 @@ def bfs():
         x = q.pop(0)
         for i in link[x]:
             if visited[i]==False :
-                for j in works[i][2:]:
-                    if visited[j]==True:
-                        pass
-                    else:
-                        break
-                else:
+                if max(time[k] for k in works[i][2:])==time[x]:
                     q.append(i)
                     visited[i] = True
                     time[i] = time[x] + works[i][0]
@@ -81,4 +76,11 @@ visited = [False] * (N+1)
 time = [0] * (N+1)
 bfs()
 res = max(time)
-print(res)
+zero_list = []
+for i in range(1, N+1):
+    if works[i][1]==0:
+        zero_list.append(works[i][0])
+
+result = max(res,max(zero_list))
+
+print(result)
