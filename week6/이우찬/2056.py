@@ -35,6 +35,29 @@
 # 6: [7]
 # 7: []
 
+#bfs 돌려서 가장 max time 구하면 되는건가?
+#일단 선행이 없는 놈은 예외 처리 해줘야됨
+#전체 bfs의 maxtime 구하고 선행이 없는놈이랑 max한번 더해주면 될듯?
+
+def bfs():
+    q = []
+    q.append(1)
+    visited[1] = True
+    time[1] = works[1][0]
+    while q :
+        x = q.pop(0)
+        for i in link[x]:
+            if visited[i]==False :
+                for j in works[i][2:]:
+                    if visited[j]==True:
+                        pass
+                    else:
+                        break
+                else:
+                    q.append(i)
+                    visited[i] = True
+                    time[i] = time[x] + works[i][0]
+
 
 #input
 N = int(input())
@@ -53,3 +76,9 @@ for i in range(2, N+1):
     else:
         for j in range(2, len(works[i])):
             link[works[i][j]].append(i)
+
+visited = [False] * (N+1)
+time = [0] * (N+1)
+bfs()
+res = max(time)
+print(res)
