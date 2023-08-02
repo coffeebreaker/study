@@ -9,7 +9,7 @@
 | :--------------------------------------------: | :----: | :--------------------------------------------------: | :----: | :----: | :----: | :----: | :----: | :----: |
 |  [1260](https://www.acmicpc.net/problem/1260)  | 실버2  | <a href="https://github.com/hyundongSung">성현동</a> |   ✅   |   ✅    |   ✅   |        |   ✅   |   ✅   |
 | [11724](https://www.acmicpc.net/problem/11724) | 실버2  |    <a href="https://github.com/SehwanChang">장세환</a> |   ✅   |    ✅     |   ✅   |        |   ✅   |   ✅   |
-| [17086](https://www.acmicpc.net/problem/17086) | 실버2  |  <a href="https://github.com/wchan0409">이우찬</a>   |   ✅   |        |   ✅   |        |   ✅   |   ✅   |
+| [17086](https://www.acmicpc.net/problem/17086) | 실버2  |  <a href="https://github.com/wchan0409">이우찬</a>   |   ✅   |    ✅    |   ✅   |        |   ✅   |   ✅   |
 |  [7562](https://www.acmicpc.net/problem/7562)  | 실버1  | <a href="https://github.com/Gunhot">이건화</a>       |   ✅   |        |   ✅   |        |   ✅   |   ✅   |
 | [15558](https://www.acmicpc.net/problem/15558) | 골드5  | <a href="https://github.com/sunghyun1356">김성현</a> |   ✅   |        |   ✅   |        |   ✅   |        |
 |  [2056](https://www.acmicpc.net/problem/2056)  | 골드4  |  <a href="https://github.com/taeho0888">윤태호</a>   |   ✅   |        |   ✅   |        |        |        |
