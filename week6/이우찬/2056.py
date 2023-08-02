@@ -14,5 +14,42 @@
 # 출력
 # 첫째 줄에 모든 작업을 완료하기 위한 최소 시간을 출력한다.
 
+# []
+# 1: 5 | 0
+# 2: 1 | 1 | 1
+# 3: 3 | 1 | 2
+# 4: 6 | 1 | 1
+# 5: 1 | 2 | 2 4
+# 6: 8 | 2 | 2 4
+# 7: 4 | 3 | 3 5 6
+# # [x][0] 으로 작업 시간 확인
+# # [x][1] 로 작업 갯수 확인
+# # [x][2] 부터로 작업 확인
+
+# 0: []
+# 1: [2,4]
+# 2: [3,5,6]
+# 3: [7]
+# 4: [5,6]
+# 5: [7]
+# 6: [7]
+# 7: []
+
+
 #input
 N = int(input())
+
+works = [[] for _ in range(N+1)]
+for i in range(1, N+1):
+    works[i] = list(map(int, input().split()))
+for i in range(1, N+1):
+    works[i][2:] = sorted(works[i][2:])
+
+link = [[] for _ in range(N+1)]
+
+for i in range(2, N+1):
+    if works[i][1]==1:
+        link[works[i][2]].append(i)
+    else:
+        for j in range(2, len(works[i])):
+            link[works[i][j]].append(i)

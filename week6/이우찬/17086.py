@@ -95,7 +95,7 @@ for i in range(N):
     for j in range(M):
         if matrix[i][j] == 1:
             filtered[i][j] = 2
-            # 8방향을 검사하여 주변의 0을 2로 바꿈
+            # 8방향을 검사하여 본인 포함, 주변의 0을 2로 바꿈
             for k in range(8):
                 nx, ny = i + dx[k], j + dy[k]
                 if 0 <= nx < N and 0 <= ny < M and matrix[nx][ny] == 0:
