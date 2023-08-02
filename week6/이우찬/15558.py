@@ -1,4 +1,4 @@
-#골드5
+#골드5 맞았다!!
 # 문제
 # 상근이는 오른쪽 그림과 같은 지도에서 진행하는 게임을 만들었다.
 
@@ -25,3 +25,47 @@
 # 출력
 # 게임을 클리어할 수 있으면 1을, 없으면 0을 출력한다.
 
+# 7 3
+# 1110110
+# 1011001
+
+# 0110110
+# 0011000
+
+#bfs
+def bfs():
+    q = []
+    q.append([0,0])
+
+    while q:
+        x,y = q.pop(0)
+        for i in range(4):
+            nx, ny = x + dx[i], y + dy[i]
+            if ny>=N:
+                return 1
+            elif 0<=nx<2 and 0<=ny and not visited[nx][ny] and matrix[nx][ny]!=0:
+                if ny <= time_count[x][y]:
+                    pass
+                else:
+                    visited[nx][ny] = 1
+                    q.append([nx,ny])
+                    time_count[nx][ny] = time_count[x][y] + 1
+
+#input
+N,k = map(int,input().split())
+left_str = input()
+left = [int(c) for c in left_str]
+right_str = input()
+right = [int(c) for c in right_str]
+matrix = [left, right]
+
+dy = [1, -1, k, k]  
+dx = [0, 0, 1, -1]  #1은 왼쪽에 있을때, -1은 오른쪽에 있을때
+
+visited = [[0 for _ in range(N)] for _ in range(2)]
+time_count = [[0 for _ in range(N)] for _ in range(2)]
+
+if bfs() != 1:
+    print(0)
+else:
+    print(1)
