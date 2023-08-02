@@ -12,7 +12,7 @@
 | [17086](https://www.acmicpc.net/problem/17086) | 실버2  |                                                      |   ✅   |        |   ✅   |        |   ✅   |   ✅   |
 |  [7562](https://www.acmicpc.net/problem/7562)  | 실버1  |                                                      |   ✅   |        |   ✅   |        |        |   ✅   |
 | [15558](https://www.acmicpc.net/problem/15558) | 골드5  | <a href="https://github.com/sunghyun1356">김성현</a> |   ✅   |        |   ✅   |        |        |        |
-|  [2056](https://www.acmicpc.net/problem/2056)  | 골드4  |  <a href="https://github.com/taeho0888">윤태호</a>   |   ✅   |        |        |        |        |        |
+|  [2056](https://www.acmicpc.net/problem/2056)  | 골드4  |  <a href="https://github.com/taeho0888">윤태호</a>   |   ✅   |        |   ✅   |        |        |        |
 
 <!-- 표 입력할 때 아래 거 참고!
 [문제번호](https://www.acmicpc.net/problem/문제번호)
