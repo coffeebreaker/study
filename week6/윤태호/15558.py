@@ -19,7 +19,7 @@ while q:
     except IndexError:
          print(1)
          sys.exit()
-
+    
     # 뒤로
     try:
         if (y-1 > t) and (y-1 >= 0) and (map[x][y-1] == 1) and not visited[x][y-1]:

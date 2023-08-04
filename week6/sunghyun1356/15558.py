@@ -7,6 +7,7 @@ map = [list(input().rstrip())for _ in range(2)]
 visited = [[False] * n for _ in range(2)]
 
 
+
 def bfs():
     q = deque()
     q.append((0,0))
