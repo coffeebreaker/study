@@ -67,15 +67,15 @@ def cal(checking):
     for i in range(1, 101):
         if check[i] == True:
             print(i, end=' ')
-
+# 그대로
 if limit > recommend:
-    answer = list(set(student))
-    for i in range(1, len(answer)+1):
+    student = (list(set(student)))
+    for i in student:
         print(i, end=' ')
 else:
     for i in range(limit):
         check[student[i]] = True
         value[student[i]] += 1
         checking.append(student[i])
-        checking = list(set(checking))
+        checking = remove_duplicates_keep_first(checking)
     cal(checking)
