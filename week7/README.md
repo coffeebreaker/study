@@ -8,7 +8,7 @@
 |                   문제번호                   | 난이도  |                      담당자                       | 김성현 | 성현동 | 윤태호 | 이건화 | 이우찬 | 장세환 |
 | :------------------------------------------: | :-----: | :-----------------------------------------------: | :----: | :----: | :----: | :----: | :----: | :----: |
 | [1547](https://www.acmicpc.net/problem/1547) | 브론즈3 |                                                   |  ✅      |    ✅    |   ✅   |        |        |        |
-| [2947](https://www.acmicpc.net/problem/2947) | 브론즈1 |                                                   |   ✅     |        |   ✅   |        |        |        |
+| [2947](https://www.acmicpc.net/problem/2947) | 브론즈1 |                                                   |   ✅     |    ✅    |   ✅   |        |        |        |
 | [1244](https://www.acmicpc.net/problem/1244) |  실버4  |                                                   |        |        |        |        |        |        |
 | [1063](https://www.acmicpc.net/problem/1063) |  실버3  | <a href="https://github.com/hyundongSung">성현동</a>                                                  |        |        |        |        |        |        |
 | [1713](https://www.acmicpc.net/problem/1713) |  실버1  |<a href="https://github.com/sunghyun1356">김성현</a>        |        |        |        |        |        |        |
