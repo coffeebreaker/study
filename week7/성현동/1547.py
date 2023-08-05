@@ -1,9 +1,11 @@
-cur = [int(n) for n in input().split()]
-dest = [1, 2, 3, 4, 5]
-while cur != dest:
-    for i in range(4):
-        if cur[i] > cur[i + 1]:
-            tmp = cur[i + 1]
-            cur[i + 1] = cur[i]
-            cur[i] = tmp
-            print(' '.join(map(str, cur)))
+change_num = int(input())
+cup_pos = 1
+for _ in range(change_num):
+    pos1, pos2 = map(int, input().split())
+    if pos1 == cup_pos:
+        cup_pos = pos2
+        continue
+    if pos2 == cup_pos:
+        cup_pos = pos1
+
+print(cup_pos)
