@@ -25,40 +25,74 @@
 # 출력
 # 첫째 줄에 킹의 마지막 위치, 둘째 줄에 돌의 마지막 위치를 출력한다.
 
-    a b c d e f g h
-1
-2
-3
-4
-5
-6
-7
-8
+#     a b c d e f g h
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
 
-R : 한 칸 오른쪽으로 : [][+1]
-L : 한 칸 왼쪽으로 : [][-1]
-B : 한 칸 위로 : [+1][]
-T : 한 칸 아래로 : [-1][]
-RT : 오른쪽 아래 대각선으로 : [-1][+1]
-LT : 왼쪽 아래 대각선으로 : [-1][-1]
-RB : 오른쪽 위 대각선으로 : [+1][+1]
-LB : 왼쪽 위 대각선으로 : [+1][-1]
+# R : 한 칸 오른쪽으로 : [][+1]
+# L : 한 칸 왼쪽으로 : [][-1]
+# B : 한 칸 위로 : [-1][]
+# T : 한 칸 아래로 : [+1][]
+# RT : 오른쪽 아래 대각선으로 : [+1][+1]
+# LT : 왼쪽 아래 대각선으로 : [+1][-1]
+# RB : 오른쪽 위 대각선으로 : [-1][+1]
+# LB : 왼쪽 위 대각선으로 : [-1][-1]
 
-R = : 한 칸 오른쪽으로 : [][+1]
-L : 한 칸 왼쪽으로 : [][-1]
-B : 한 칸 위로 : [+1][]
-T : 한 칸 아래로 : [-1][]
-RT : 오른쪽 아래 대각선으로 : [-1][+1]
-LT : 왼쪽 아래 대각선으로 : [-1][-1]
-RB : 오른쪽 위 대각선으로 : [+1][+1]
-LB : 왼쪽 위 대각선으로 : [+1][-1]
-
+move = {
+    "R": [1,0],
+    "L": [-1,0],
+    "B": [0,-1],
+    "T": [0,1],
+    "RT": [1,1],
+    "LT": [-1,1],
+    "RB": [1,-1],
+    "LB": [-1,-1],
+}
 #input
-kinga, stonea, move = input().split()
-move = int(move)
+kinga, stonea, n = input().split()
+n = int(n)
 king = list(map(int, [ord(kinga[0]) - 64, kinga[1]]))
 stone = list(map(int, [ord(stonea[0]) - 64, stonea[1]]))
 
+dest = [0,0]
+s_dest = [0,0]
 
+for i in range(n):
+    to_where = input()
+    dest[0] = king[0] + move[to_where][0]
+    dest[1] = king[1] + move[to_where][1]
+    s_dest[0] = stone[0] + move[to_where][0]
+    s_dest[1] = stone[1] + move[to_where][1]
+    
+    #king이 stone으로 갈때
+    if dest == stone:
+        # stone이 가려는 곳이 체스판 안일때
+        if s_dest[0]>0 and s_dest[0]<=8 and s_dest[1]>0 and s_dest[1]<=8:
+            king[0] = stone[0]
+            king[1] = stone[1]
+            stone[0] = stone[0] + move[to_where][0]
+            stone[1] = stone[1] + move[to_where][1]
+        # stone이 가려는 곳이 체스판 밖일때
+        else:
+            pass
+    # king이 가려는 곳이 체스판 안일때
+    elif dest[0]>0 and dest[0]<=8 and dest[1]>0 and dest[1]<=8:
+        king[0] = dest[0]
+        king[1] = dest[1]
+    # king이 가려는 곳이 체스판 밖일때
+    else:
+        pass
 
-#돌리자
+king[0] = chr(king[0]+64)
+stone[0] = chr(stone[0]+64)
+com_king = str(king[0]) + str(king[1])
+com_stone = str(stone[0]) + str(stone[1])
+
+print(com_king)
+print(com_stone)
