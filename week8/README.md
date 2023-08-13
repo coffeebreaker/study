@@ -9,7 +9,7 @@
 | :--------------------------------------------: | :----: | :------------: | :----: | :----: | :----: | :----: | :----: | :----: |
 |  [2225](https://www.acmicpc.net/problem/2225)  | 골드5  |      수학      |        |        |        |        |        |        |
 | [14502](https://www.acmicpc.net/problem/14502) | 골드4  |   브루트포스   |        |        |        |        |        |        |
-|  [1715](https://www.acmicpc.net/problem/1715)  | 골드4  |     그리디     |        |        |        |        |        |        |
+|  [1715](https://www.acmicpc.net/problem/1715)  | 골드4  |     그리디     |        |        |   ✅   |        |        |        |
 |  [2133](https://www.acmicpc.net/problem/2133)  | 골드4  |       DP       |        |        |        |        |        |        |
 | [10026](https://www.acmicpc.net/problem/10026) | 골드4  | 그래프 BFS DFS |        |        |        |        |        |        |
 |  [3190](https://www.acmicpc.net/problem/3190)  | 골드5  |   시뮬레이션   |        |        |        |        |        |        |
