@@ -1,5 +1,7 @@
 from collections import deque
 
+# 3차원 문제번호: 7569
+
 directions = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 col, row = map(int, input().split())
 box = [[int(i) for i in input().split()] for _ in range(row)]
