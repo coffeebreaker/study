@@ -1,5 +1,6 @@
 from collections import deque
 
+# hard_version: 12851번 ,13549번
 pos_a, pos_b = map(int, input().split())
 
 q = deque([(pos_a, 0)])
